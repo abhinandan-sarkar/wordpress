@@ -1,0 +1,18 @@
+How to build own coustom wordpress theme 
+step -1
+header.php
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+same for images also...
+
+step -2
+how include header/footer in wordppress
+<?php get_header()?>
+if multipale then 
+header-inner.php
+<?php get_header('inner');?>
+same as footer also...
+
+step-3
+how add coustom navigation menu in wordpress theme..
+rgister_nav_menus()--->declear
+wp_nav_menu()
